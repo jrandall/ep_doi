@@ -65,7 +65,7 @@ exports.aceCreateDomLine = function(name, context) {
   }
 
   if (doiHref) {
-    var url = doiHref.replace(/^(info:doi\/|doi\:)/, 'http://dx.doi.org/');
+    var url = doiHref.replace(/^(info:doi\/|doi\:)/, 'https://doi.org/');
     var modifier = {
       extraOpenTags: '<a href="' + Security.escapeHTMLAttribute(url) +'">',
       extraCloseTags: '</a>',
